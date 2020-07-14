@@ -1,0 +1,941 @@
+  <!DOCTYPE html>
+<html>
+      <head>
+            <title>给于鱼鱼的礼物</title>
+            <meta charset="UTF-8"/>
+            <style type="text/css">
+             *{
+                  padding: 0px;
+                  margin: 0px;
+            }
+            a{
+                  text-decoration: none;
+                  color: black;
+            }
+            li{
+                  list-style: none;
+            }
+         .search{
+            width: 30%;            
+            margin: 3px auto;
+            display: flex;
+            float: right;
+        }        
+        .search input{
+            float: left;
+            flex: 4;
+            height: 31px;
+            outline: none;
+            border: 1px solid #8B008B;
+            box-sizing: border-box;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .search button{
+            float: right;
+            flex: 1;
+            height: 30px;
+            background-color: #8B008B;
+            color: white;
+            border-style: none;
+            outline: none;
+        }
+        .search button i{
+            font-style: normal;
+        }
+        .search button:hover{
+            font-size: 16px;
+        }           
+            .box1{
+                  width: 100%;
+                  height:36px;
+            }
+            .ys{
+                  width: 1200px;
+                  height:36px; 
+                  margin: 0 auto;
+            }
+            .huanying{
+                  float: left;
+                  margin-left: 428px;
+                  font-size: 12.93px;
+                  line-height: 36px;
+                  color: rgb(171,159,169);
+            }     
+            .login{
+                  float: left;
+                  margin-left: 40px;
+                  font-size: 14.78px;
+                  line-height: 36px;
+                  color: rgb(93,90,92);
+            }
+            .zhuce{
+                  float: left;
+                  margin-left: 28px;
+                  font-size: 14.78px;
+                  line-height: 36px;
+                  color: rgb(93,90,92);
+            }
+            .dingdan{
+                  float: left;
+                  margin: 0px 0px 0px 43px;
+                  font-size: 14.78px;
+                  line-height: 36px;
+                  color: rgb(93,90,92);
+            }           
+            .dingdan select{
+                  border-style:none;
+            }
+            .mine{
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 10px;
+                  font-size: 14.78px;
+                  color: rgb(93,90,92);
+            }
+            .mine select{
+                  border-style:none;
+            }
+            .help{
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 10px;
+                  font-size: 14.78px;
+                  color: rgb(93,90,92);
+            }
+            .help select{
+                  border-style:none;
+            }            
+            .box2{
+                  width: 100%;
+                  height:152px;
+            }
+            .ma{
+                  width: 152px;
+                  height:152px; 
+            }
+            .logo{
+                  width: 50px;
+                  height: 50px;
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 37px;
+            }
+            .sousuo{
+                  width: 541px;
+                  height: 71px;
+                  float: left;
+                  margin-left: 129px;
+                  margin-top: 53px;
+            }
+            .sousuo input{
+                  width: 541px;
+                  height: 46px;
+                  color: rgb(233,233,233);
+                  font-size: 14.78px;
+                  text-align: center;
+                  border:1px solid rgb(57,57,66);
+                  border-right-color: rgb(204,204,204);
+            }
+            .fangdajing{
+                  width: 61px;
+                  height: 44px;
+                  float: left;
+                  margin-top: 53px;
+                  border:1px solid rgb(57,57,66);
+                  border-left-color: rgb(204,204,204);
+                  color: blue;
+            }
+            .fangdajing img{
+                  margin-top: 5px;
+                  margin-left: 11px;
+                  float: left;
+            }
+            .cart{
+                  width: 44px;
+                  height: 44px;
+                  float: left;
+                  margin-left: 144px;
+                  margin-top: 70px;
+            }
+            .box3{
+                  width: 100%;
+                  height: 45px;
+            }
+            .daohang{
+                  width: 1200px;
+                  height: 45px;
+                  float: left;
+                  margin-left: 50px;
+                  margin: 0 auto;
+            }
+            .daohang li{
+                  display: inline-block;
+            }
+            .daohang select{
+                  border-style: none;
+                  font-size: 14.78px;
+                  color: rgb(5,5,5);
+            }
+           
+            a:hover{
+                  color: #A52A2A;
+            }
+            .dao1:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao2:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao3:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao4:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao5:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao6:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao7:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao8:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao9:hover{
+                  border-width: 1px;
+                  border-style: solid;
+                  border-bottom-color: #A52A2A;
+            }
+            .dao0{
+                  width: 129px;
+                  height: 39px;
+                  float: left;
+                  margin-left: 0px;
+            }
+            .dao1{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 28px;
+            }
+            .dao2{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 77px;
+            }
+            .dao3{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 77px;
+            }
+            .dao4{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 77px;
+            }
+            .dao5{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 45px;
+            }
+            .dao6{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 45px;
+            }
+            .dao7{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 45px;
+            }
+            .dao8{
+                  width: 44px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 45px;
+            }
+            .dao9{
+                  width: 30px;
+                  height: 39px;
+                  border: 3px solid rgb(255,255,255);
+                  float: left;
+                  margin-left: 45px;
+            }
+            .box4{
+                  width: 100%;
+            }
+            .datu{
+                  width: 100%;
+            }
+            .datu>img{
+                  width: 100%;
+            }        
+            .box5{
+                  width: 100%;
+                  height: 225px;
+            }
+            .cai{
+                  width: 1200px;
+                  height: 31px;
+                  margin: 0px auto;
+            }
+            .yushi{
+                  float: left;
+                  margin-left: 24px;
+                  margin-top: 25px;
+                  font-size:18px;
+                  color: rgb(0,0,0);
+            }
+            .shangpin{
+                  width: 1200px;
+                  float: right;
+                  margin-right: 0px;
+                  margin-top: 33px;
+                  font-size: 14px;
+                  color: rgb(141,141,141);
+                  margin: 0px auto;
+            }
+            .shangpin p{
+                  float: right;
+                  margin-right: 0px;
+            }
+            .biaoge{
+                  width: 1200px;
+                  height: 137px;
+            }
+            .yu{
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                  width: 1200px;
+                  height: 45px;
+                  border:1px solid rgb(183,183,183);
+                  text-align: center;
+                  line-height: 45px;
+                  border-bottom-color:white;
+            }
+            .qita{
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                  width: 1200px;
+                  height: 45px;
+                  border:1px solid rgb(183,183,183);
+                  text-align: center;
+                  line-height: 45px;
+                  border-bottom-color:white;
+                  
+            }
+            .diqu{
+                  float: left;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                  width: 1200px;
+                  height: 46px;
+                  border:1px solid rgb(183,183,183);
+                  text-align: center;
+                  line-height: 45px;
+            }
+            .more{
+                  width: 65px;
+                  height: 35px;
+                  float: right;
+                  margin-right: 0px;
+                  font-size: 14px;
+                  color: rgb(229,229,229);
+            }
+            .hui{
+                  width: 101px;
+                  height: 46px;
+                  background-color: rgb(229,229,229);
+                  font-size: 16px;
+                  float: left;
+            }
+            .bai{
+                  width: 100px;
+                  height: 46px;
+                  float: left;
+                  margin-left: 0px;
+            }
+            .box6{
+                  width: 100%;
+                  height: 778px;
+            }
+            .yutu{
+                  width: 1200px;
+                  height: 778px;
+                  margin: 0 auto;
+            }
+            .tu1{
+                  width: 272px;
+                  height: 293px;
+                  float: left;
+                  margin-left: 11px;
+                  margin-top: 61px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .hid1{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu1:hover .hid1{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu1:hover .hid1 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu2{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 61px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu2 img{
+                  float: left;
+            }
+            .hid2{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position:absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu2:hover .hid2{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu2:hover .hid2 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu3{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 61px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu3 img{
+                  float: left;
+            }
+            .hid3{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu3:hover .hid3{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu3:hover .hid3 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu4{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 61px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu4 img{
+                  float: left;
+            }
+            .hid4{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu4:hover .hid4{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu4:hover .hid4 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }     
+            .tu5{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 11px;
+                  margin-top: 33px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu5 img{
+                  float: left;
+            }
+            .hid5{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu5:hover .hid5{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu5:hover .hid5 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu6{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 33px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu6 img{
+                  float: left;
+            }
+            .hid6{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu6:hover .hid6{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu6:hover .hid6 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu7{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 33px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu7 img{
+                  float: left;
+            }
+            .hid7{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu7:hover .hid7{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu7:hover .hid7 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+            .tu8{
+                  width: 272px;
+                  height: 293px;
+                  text-align: center;
+                  float: left;
+                  margin-left: 30px;
+                  margin-top: 33px;
+                  border:1px solid rgb(71,71,71);
+                  position: relative;
+            }
+            .tu8 img{
+                  float: left;
+            }
+            .hid8{
+                  width: 272px;
+                  height: 51px;
+                  background-color: rgba(76,76,76,0.5);
+                  position: absolute;
+                  bottom: 0px;
+                  text-align: center;
+                  color: rgb(255,255,255);
+                  }
+            .tu8:hover .hid8{
+                  width: 272px;
+                  height: 293px;
+                  background-color: rgba(76,76,76,0.5);
+                  margin: 0px auto;
+            }
+            .tu8:hover .hid8 p{
+                  float: left;
+                  margin-top: 125px;
+                  margin-left: 60px;
+            }
+                  .box7{
+                        width: 100%;
+                        height: 102px;
+                        background-color: rgb(245,245,245);
+                  }
+                  .renzheng{
+                        width: 1200px;
+                        height: 102px;
+                        background-color: rgb(245,245,245);
+                        margin: 0 auto;
+                  }
+                  .zizhi{
+                        width: 285px;
+                        height: 56px;
+                        float: left;
+                        margin-left: 0px;
+                        margin-top: 25px;
+                        border-right:1px solid rgb(224,224,224);
+                  }
+                  .zizhi img{
+                        float: left;
+                        margin-left: 35px;
+                  }
+                  .wenzi11{
+                        font-size: 19px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                  }
+                  .wenzi12{
+                        font-size: 13px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                        margin-top: 8px;
+                  }
+                  .zhifu{
+                        width: 285px;
+                        height: 56px;
+                        float: left;
+                        margin-left: 0px;
+                        margin-top: 25px;
+                        border-right:1px solid rgb(224,224,224);
+                  }
+                  .zhifu img{
+                        float: left;
+                        margin-left: 35px;
+                  }
+                  .wenzi21{
+                        font-size: 19px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                  }
+                  .wenzi22{
+                        font-size: 13px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                        margin-top: 8px;
+                  }
+                  .baoxian{
+                        width: 285px;
+                        height: 56px;
+                        float: left;
+                        margin-left: 0px;
+                        margin-top: 25px;
+                        border-right:1px solid rgb(224,224,224);
+                  }
+                  .baoxian img{
+                        float: left;
+                        margin-left: 35px;
+                  }
+                  .wenzi31{
+                        font-size: 19px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                  }
+                  .wenzi32{
+                        font-size: 13px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                        margin-top: 8px;
+                  }
+                  .shouhou{
+                        width: 285px;
+                        height: 56px;
+                        float: left;
+                        margin-left: 0px;
+                        margin-top: 25px;
+                        
+                  }
+                  .shouhou img{
+                        float: left;
+                        margin-left: 35px;
+                  }
+                  .wenzi41{
+                        font-size: 19px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                  }
+                  .wenzi42{
+                        font-size: 13px;
+                        color: rgb(90,90,90);
+                        float: left;
+                        margin-left: 23px;
+                        margin-top: 8px;
+                  }
+                  .box8{
+                        width: 100%;
+                        height: 98px;
+                        background-color: rgb(50,50,50);
+                  }
+                  .dihe{
+                        width: 1200px;
+                        height: 98px;
+                        background-color: rgb(50,50,50);
+                        margin: 0 auto;
+                  }
+                  .yihang{
+                        color: rgb(255,255,255);
+                        font-size: 14px;
+                        float: left;
+                        margin-left: 240px;
+                        margin-top: 40px;
+                  }
+                  .banquan{
+                        color: rgb(255,255,255);
+                        font-size: 14px;
+                        float: left;
+                        margin-left: 500px;
+                        margin-top: 10px;
+                  }
+            </style>
+      </head>
+      <body>
+            <div class="box1">
+            <div class="ys">
+                  <div class="huanying">
+                        "   赠与全世界最可爱的————于鱼鱼 \(* `꒳ˆ * )/*ෆෆෆ   "
+                  </div>
+                 
+            </div>
+            </div>
+            <div class="box2">
+                  <div class="ma">
+                        <div class="logo">
+                              <img src="img/雪人.jpg" alt="logo" width="190px" height="150px" />
+                        </div> 
+                         </div>
+            <div class="search clear">
+            <input type="text" placeholder="“   我想要两个西柚   ”" name="" id="" value="" />
+            <button><i>哼唧</i></button>          
+            </div>                       
+            </div>
+            </div>            
+            <div class="box3">
+                  <div class="daohang">
+                        <ul>
+                                    
+                                    <div class="dao1"><li><a href="#">望</a></li></div>
+                                    <div class="dao3"><li><a href="#">你</a></li></div>
+                                    <div class="dao4"><li><a href="#">被</a></li></div>
+                                    <div class="dao6"><li><a href="#">簇</a></li></div>
+                                    <div class="dao7"><li><a href="#">拥</a></li></div>
+                                    <div class="dao8"><li><a href="#">包</a></li></div>
+                                    <div class="dao9"><li><a href="#">围</a></li></div>
+                         </ul>
+                  </div>
+            </div>
+            <div class="box4">
+                  <div class="datu">
+                        <img src="img/banner.jpg " height="380px">
+                  </div>
+            </div>
+            <div class="box">
+                  
+                  <div class="shangpin">
+                        <p>”所以你走的路要繁华盛开，要人声鼎沸“</p>
+                  </div>
+                  
+            </div>
+            <div class="box6">
+                  <div class="yutu">
+                        <div class="tu1">
+                              <img src="img/1.jpg" alt="yupian" width="272px" height="293px" />
+                              <div class="hid1">
+                                    <p>“夏天有梅子味的晚霞</br>
+                                    和两颗啤酒味儿的星”</p>
+                              </div>
+                        </div>
+                        <div class="tu2">
+                              <img src="img/2.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid2">
+                                    <p>想到上学时</br>
+                                    你给我传的小纸条</p>
+                              </div>
+                        </div>
+                        <div class="tu3">
+                              <img src="img/3.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid3">
+                                    <p>赶不上年少的日出</br>
+                                    但希望之后一直有你</p>
+                              </div>
+                        </div>
+                        <div class="tu4">
+                              <img src="img/4.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid4">
+                                     <p>你和我的最适距离</br>
+                                    是负哒哒厘米</p>
+                              </div>
+                        </div>
+                        <div class="tu5">
+                              <img src="img/5.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid5">
+                                  <p>其实我上大学之后</br>
+                                    就没再写过手账</p>
+                              </div>
+                        </div>
+                        <div class="tu6">
+                              <img src="img/6.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid6">
+                                   <p>或许是因为</br>
+                                    少了那个交换本子的你</p>
+                              </div>
+                        </div>
+                        <div class="tu7">
+                              <img src="img/7.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid7">
+                                    <p>你还在看小王子么</br>
+                                    我你送我的它落在了北京</p>
+                              </div>
+                        </div>
+                        <div class="tu8">
+                              <img src="img/8.jpg" alt="yupian" width="272px" height="293px"/>
+                              <div class="hid8">
+                                   <p>“有一天</br>
+                                    我看了四十四次日落”</p>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+            <div class="box7">
+                  <div class="renzheng">
+                        <div class="zizhi">
+                              <p class="wenzi11">有</p>
+                              <p class="wenzi12">我听说  喜之郎橘子味的好吃  欢乐的歌听了其实会开心   你也不会发现这是一首藏头诗</p>
+                        </div>
+                        <div class="zhifu">
+                              <p class="wenzi21">点</p>
+                              <p class="wenzi22">我是个俗气的人见山是山，见海是海，见花是花。</p>  
+                        </div>
+                        <div class="baoxian">
+                              <p class="wenzi31">想</p>
+                              <p class="wenzi32">唯独见你，见了你云海开始翻涌，江潮开始澎湃，你无需开口，我和天地万物便通通奔向你</p>
+                        </div>
+                        <div class="shouhou">
+                              <p class="wenzi41">你</p>
+                              <p class="wenzi42">世界上美好的东西不太多,立秋傍晚从河对岸吹来的风</p>
+                        </div>
+                  </div>
+            </div>
+            <div class="box8">
+                  <div class="dihe">
+                        <div class="yihang">
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp被窝是上帝开在人间的分店所以以后都要ᴳᴼᴼᴰ ᴺᴵᴳᴴᵀ
+
+                        </div>
+                        <div class="banquan">
+             ©&nbsp&nbsp 20200714-forever &nbsp于鱼鱼&nbsp All rights reserved. 
+                        </div>
+                  </div>
+            </div>
+      </body>
+</html>
